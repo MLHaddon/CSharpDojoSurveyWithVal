@@ -1,0 +1,15 @@
+﻿@model User;
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="container"  style="width: 400px;">
+    <div class="d-flex flex-column justify-content-between align-items-center">
+        <h1 class="p-2">Submitted Info</h1>
+        <div class="p-2">Name @Model.Name</div>
+        <div class="p-2">Location @Model.DojoLocation</div>
+        <div class="p-2">Language @Model.Language</div>
+        <div class="p-2">Comment @Model.Comment</div>
+        <div class="p-2 align-self-end"><a asp-action="Index" asp-controller="Home"><button>Go Back</button></a></div>
+    </div>
+</div>
